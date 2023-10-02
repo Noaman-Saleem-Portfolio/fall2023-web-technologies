@@ -12,6 +12,20 @@
       h1 {
         background-color: blue;
       }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        /* color: #fff; */
+      }
+      td,
+      th {
+        border: 1px solid black;
+      }
+      tr:nth-child(even) {
+        background-color: #b6b3b3;
+      }
     </style>
   </head>
   <body>
@@ -172,6 +186,59 @@
         onClick="one()"
       />
     </map>
+
+    <h2>Tables</h2>
+    <hr />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Country Code</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pakistan</td>
+          <td>PKR</td>
+          <td>pakistan@gamil.com</td>
+        </tr>
+        <tr>
+          <td>USA</td>
+          <td>US</td>
+          <td>us@gamil.com</td>
+        </tr>
+        <tr>
+          <td>China</td>
+          <td>CH</td>
+          <td>china@gamil.com</td>
+        </tr>
+        <tr>
+          <td>Japan</td>
+          <td>JP</td>
+          <td>jp@gamil.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <table>
+      <tr>
+        <th colspan="2">Country</th>
+        <td>China</td>
+        <td>Japan</td>
+      </tr>
+      <tr>
+        <th>Code</th>
+        <td>CH</td>
+        <td>JP</td>
+      </tr>
+    </table>
 
     <script>
       function one() {
