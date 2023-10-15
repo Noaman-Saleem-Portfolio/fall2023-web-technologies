@@ -1,0 +1,15 @@
+p {
+  background-color: pink;
+  width: 40%;
+}
+
+.one {
+  /* padding: 20px; */
+  border: 10px dotted black;
+}
+
+.two {
+  box-sizing: border-box;
+  /* padding: 20px; */
+  border: 10px dotted black;
+}
