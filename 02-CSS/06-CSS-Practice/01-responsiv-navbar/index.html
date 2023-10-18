@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="#">
+              <img src="./images/user.png" alt="" />
+            </a>
+          </div>
+          <ul class="nav-list" id="navi-list">
+            <li class="list-item">
+              <a href="#">Our Services</a>
+            </li>
+            <li class="list-item">
+              <a href="#">About Us</a>
+            </li>
+            <li class="list-item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+
+          <div class="menu" id="nav-icon">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+          </div>
+        </nav>
+      </div>
+      <!-- container -->
+    </div>
+    <!-- main -->
+    <script>
+      let navIcon = document.getElementById("nav-icon");
+      let naviList = document.getElementById("navi-list");
+      //   console.log(navIcon);
+      //   console.log(navList);
+      navIcon.addEventListener("click", function () {
+        naviList.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menubar</title>
+    <link rel="stylesheet" href="./styles3.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="#">
+              <img src="./images/user.png" alt="" />
+            </a>
+          </div>
+          <ul class="nav-list" id="list">
+            <a href="#">
+              <li class="list-item">Our Services</li>
+            </a>
+            <a href="#">
+              <li class="list-item">About Us</li>
+            </a>
+            <a href="#">
+              <li class="list-item">Contact</li>
+            </a>
+          </ul>
+        </nav>
+
+        <div class="menu" id="menu-btn">
+          <div class="menu-item"></div>
+          <div class="menu-item"></div>
+          <div class="menu-item"></div>
+        </div>
+      </div>
+      <!-- container -->
+    </div>
+    <!-- main -->
+
+    <script>
+      const menuIcon = document.getElementById("menu-btn");
+      const menuList = document.getElementById("list");
+
+      menuIcon.addEventListener("click", function () {
+        menuList.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
