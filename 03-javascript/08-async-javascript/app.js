@@ -52,7 +52,7 @@
 
 // const prepareCoffee = () => {
 //   setTimeout(() => {
-//     console.log("Coffee Toast is ready.");
+//     console.log("Coffee is ready.");
 //   }, 2000);
 // };
 
@@ -137,9 +137,13 @@
 // };
 
 // let promise = preparePizza();
-// // console.log(promise);
+// console.log(promise);
 
 // promise.then((value) => {
+//   console.log(value);
+// });
+
+// preparePizza().then((value) => {
 //   console.log(value);
 // });
 
@@ -332,59 +336,59 @@
 ///+++++++++++++++++++++++++++   try { } and catch(){ }   +++++++++++++++++++++++++++++++++++++++++++++++
 ///++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-console.log("Program Started");
+// console.log("Program Started");
 
-const preparePizza = () => {
-  let promise = new Promise((resolve, reject) => {
-    let isGassLoadShedding = false;
+// const preparePizza = () => {
+//   let promise = new Promise((resolve, reject) => {
+//     let isGassLoadShedding = false;
 
-    setTimeout(() => {
-      if (isGassLoadShedding) {
-        reject("Sorry Pizza can't be prapared. Gass is gone.");
-      } else {
-        resolve("Pizza is ready.");
-      }
-    }, 5000);
-  });
+//     setTimeout(() => {
+//       if (isGassLoadShedding) {
+//         reject("Sorry Pizza can't be prapared. Gass is gone.");
+//       } else {
+//         resolve("Pizza is ready.");
+//       }
+//     }, 5000);
+//   });
 
-  return promise;
-};
+//   return promise;
+// };
 
-const prepareFrenchToast = (callback) => {
-  let promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("French Toast is ready.");
-    }, 3000);
-  });
+// const prepareFrenchToast = (callback) => {
+//   let promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("French Toast is ready.");
+//     }, 3000);
+//   });
 
-  return promise;
-};
+//   return promise;
+// };
 
-const prepareCoffee = (callback) => {
-  let promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("Coffee is ready.");
-    }, 2000);
-  });
+// const prepareCoffee = (callback) => {
+//   let promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("Coffee is ready.");
+//     }, 2000);
+//   });
 
-  return promise;
-};
+//   return promise;
+// };
 
-const startProcess = async () => {
-  try {
-    const pizzaValue = await preparePizza();
-    console.log(pizzaValue);
+// const startProcess = async () => {
+//   try {
+//     const pizzaValue = await preparePizza();
+//     console.log(pizzaValue);
 
-    const frenchToastValue = await prepareFrenchToast();
-    console.log(frenchToastValue);
+//     const frenchToastValue = await prepareFrenchToast();
+//     console.log(frenchToastValue);
 
-    const coffeeValue = await prepareCoffee();
-    console.log(coffeeValue);
-  } catch (error) {
-    console.log("Error is = " + error);
-  }
-};
+//     const coffeeValue = await prepareCoffee();
+//     console.log(coffeeValue);
+//   } catch (error) {
+//     console.log("Error is = " + error);
+//   }
+// };
 
-startProcess();
+// startProcess();
 
-console.log("Program Completed");
+// console.log("Program Completed");
