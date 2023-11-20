@@ -392,3 +392,34 @@
 // startProcess();
 
 // console.log("Program Completed");
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+/////////////////////////fetch API////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+
+// const cryptoAPI = async () => {
+//   const res = await fetch(
+//     "https://api.github.com/users/Noaman-Saleem-Portfolio"
+//   );
+//   //   console.log(res);
+
+//   const data = await res.json();
+//   console.log(data);
+// };
+
+// cryptoAPI();
+
+// fetch("https://api.github.com/users/Noaman-Saleem-Portfolio")
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((error) => console.log(error));
+
+// console.log("Program Completed");
+
+// https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd
