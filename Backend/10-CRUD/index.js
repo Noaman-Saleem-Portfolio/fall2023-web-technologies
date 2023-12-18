@@ -11,6 +11,9 @@ const port = PORT;
 //Connecting to DB
 connectDB();
 
+//Parsing json data in request body
+app.use(express.urlencoded({ extended: true }));
+
 ////setting folder for static assets
 // app.use(express.static("public"))
 app.use(express.static(path.join(__dirname, "public")));

@@ -3,7 +3,10 @@ const { Schema } = mongoose;
 
 const blogSchema = new Schema(
   {
-    title: String,
+    title: {
+      type: String,
+      required: true,
+    },
     image: String,
     description: {
       type: String,
